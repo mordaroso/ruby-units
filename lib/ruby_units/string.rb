@@ -53,10 +53,6 @@ class String
     self.unit.until(time_point)
   end
   
-  def to(other)
-    self.unit.to(other)
-  end
-  
   def time(options = {})
     self.to_time(options) rescue self.to_datetime(options)
   end
